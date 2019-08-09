@@ -1,0 +1,8 @@
+#! /bin/sh
+
+testBasicUsageStatement() {
+    result="$(./bake.py -h)"
+    assertNotNull $result
+}
+
+. shunit2 

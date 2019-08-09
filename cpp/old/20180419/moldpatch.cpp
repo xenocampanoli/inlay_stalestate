@@ -1,0 +1,284 @@
+// resin.cpp
+//345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+#include "resin.hpp"
+
+// Begin:  All includes here should be specific only to this file:
+#include <exception>
+#include <fstream>
+#include <iostream>
+#include <jsoncpp/json/json.h>
+#include <set>
+#include <sstream>
+#include <streambuf>
+#include <sys/stat.h>
+#include <time.h>
+#include <regex>
+#include <string>
+#include <unistd.h>
+
+
+const std::string Resin::BoleSapKey = "BoleSap";
+const std::string Resin::SoilSapKey = "SoilSap";
+
+const std::string Resin::PrefixPattern = "(^|\r?\n)";
+const std::string Resin::SuffixPattern = "(?=\r?\n|$)";
+
+const std::string Resin::OptionalTagPattern	= "###([^#]*)###([^#]*)###([^#]*)###";
+const std::string Resin::RequiredTagPattern	= "@@@([^@]*)@@@";
+const std::string Resin::SubMoldTagPattern	= "\\^\\^\\^([^^]*)\\^\\^\\^";
+
+static const std::vector<std::regex> InclusionPatterns = {
+	std::regex(Resin::OptionalTagPattern),
+	std::regex(Resin::RequiredTagPattern),
+	std::regex(Resin::SubMoldTagPattern)
+};
+
+// End:  All includes here should be specific only to this file:
+
+void Resin::DumpSap(const Json::Value& jvoR, std::string itemKey = "") {
+    if ( jvoR.size() <= 0 ) {
+        std::cout << "Non-positive size of seen:  " << jvoR.size() << "." << std::endl;
+        return;
+    }
+	if ( itemKey.size() > 0 ) {
+		std::cout << "Json::Value dump for item key '" << itemKey << "':  '" << jvoR[itemKey].asString() << "'." << std::endl;
+	} else {
+		std::cout << "Json::Value object tree dump:  '" << jvoR.asString() << "'." << std::endl;
+	}
+}
+
+void Resin::DumpBoleSap(const std::string itemKey = "") {
+	Resin::DumpSap(BoleSap, itemKey);
+}
+
+void Resin::DumpSoilSap(const std::string itemKey = "") {
+	Resin::DumpSap(SoilSap, itemKey);
+}
+
+std::string Resin::GetMonthlyString(std::string itemKey) {
+	std::string mik = "Monthly" + itemKey;
+	Json::Value buffer;
+	if ( BoleSap.isMember(mik) ) {
+		buffer = BoleSap[mik];
+	} else if ( SoilSap.isMember(mik) ) {
+		buffer = SoilSap[mik];
+	} else {
+		std::string estr = "Month key " + itemKey = " not found.";
+		throw std::invalid_argument(estr);
+	}
+    static const std::vector<std::string> month_array =
+		{"January","February","March","April","May","June",
+		"July","August","September","October","November","December"};
+	time_t rawtime;
+	time(&rawtime);
+	struct tm *ts = localtime(&rawtime);
+	std::string month = month_array[ts->tm_mon];
+	return buffer[month].asString();
+}
+
+std::string Resin::GetUniversalString(std::string itemKey) {
+	std::string buffer = Resin::GetValue(SoilSap,itemKey);
+	return buffer;
+}
+
+std::string Resin::GetValue(const Json::Value& jvoR, std::string itemKey) {
+    if ( jvoR.isMember(itemKey) ) {
+		//std::string buffer = jfwo.write(BoleSap[itemKey].asString());
+		std::string buffer = jvoR[itemKey].asString();
+		return buffer;
+	}
+	std::string estr = "String " + itemKey + " not found to be member key of Hash.";
+	throw std::runtime_error(estr);
+}
+
+std::string Resin::glomMoldTree( const std::string& moldString, const Json::Value& jvoR) {
+	std::string		entire;
+	std::string		identifier;
+	size_t			idsize;
+	std::string		json_key;
+	size_t			n;
+	size_t			position;
+	std::string		product;
+	std::regex		regexo;
+	std::string		replacement;
+	std::smatch		smo;
+	std::string		strbuffer;
+
+	// TBD xc
+	product=moldString;
+	for(std::regex re_patt : Resin::InclusionPatterns) {
+		s = mold;
+		n = 0;
+		
+		while ( std::regex_search( item, smo, re_patt ) ) {
+			if ( ++n > 1 ) break; // Probably need a throw TBD!!!
+			identifier	= smo[0].str();
+			idsize		= identifier.size();
+			json_key	= smo[1].str();
+			position	= item.find(identifier);
+			if ( json_key == ExampleId ) {
+				replacement = secreteItems(jvoR[i][ExampleId],);
+			} else {
+				replacement = jvoR[i][json_key].asString();
+			}
+			item.replace(position, idsize, replacement);
+		}
+		entire += item;
+	}
+	return entire;
+}
+
+Resin::notYetIndexed(const vector<int> jvoR) {
+} 
+
+const ListSubsets InitSubsets(const Json::Value &jvoR, const Options resinOps) {
+	struct ListSubsets lssbuffer;
+	#  TBD  Iterate through all items at this level to find any list items.
+		std::string lokey = loopstr;
+		for (Json::Value::ArrayIndex i = 0; i < jvoR.size(); i++) {
+			if ( resinOps.dropItem(lokey,i,jvoR) ) continue;
+			lssbuffer[lokey].push_back(...); // Gotta have a literal with both the index and the new empty map of vector of struct.
+		}
+	return lssbuffer;
+}
+
+Resin::initSubsets(const Json::Value& jvoR, const Options resinOps, Resin::ReportingIndices rioR) {
+	for (Json::Value::ArrayIndex i = 0; i < jvoR.size(); i++) {
+		if ( ! resinOps.hasMinMonths(jvoR[i]) )				coninue;
+		if ( ! resinOps.inYearsRange(jvoR[i]) )				coninue;
+		if ( ! resinOps.inIndexRange(jvoR[i]) )				coninue;
+		if ( ! resinOps.treeHasTopic(jvoR[i],skillset ) )	coninue;
+		rioR.Experience.push_back(i);
+		rioR.Examples.push_back(vector<int>());
+		tmplist = {};
+		for (std::string skill:  skillset) {
+			for (Json::Value::ArrayIndex j = 0; j < jvoR[i][ExampleId].size(); j++) {
+				if ( resinOps.hasSkill(jvoR[i][ExampleId][j] and notYetIndexed(rioR.Examples[i],j) ) {
+					rioR.Examples[i].push_back(j);
+				} else {
+					tmplist.push_back(j);
+				} 
+			}
+		}
+		if ( resinOps.includeExampleRemainders(resinOps) )
+			// append tmplist to examples, thus preserving original order.
+	}
+}
+
+Resin::initSampleWorkSubsets(const Json::Value& jvoR, const Options resinOps, Resin::ReportingIndices rioR) {
+	set<string> skillset = resinOps.getSkillSetFromArgString();
+	vector<int> tmplist;
+	for (Json::Value::ArrayIndex i = 0; i < jvoR.size(); i++) {
+		if ( resinOps.hasSkill(jvoR[i]) ) {
+			rioR.SampleWork.push_back(i);
+		} else {
+			tmplist.push_back(j);
+		}
+	}
+	if ( includeExampleRemainders(resinOps) )
+		// append tmplist to examples, thus preserving original order.
+}
+
+const Resin::ReportingIndices InitSubsets(const Json::Value& jvoR, const Options resinOps) {
+	Resin::ReportingIndices rib;
+	selectExperienceSubsets(boleSap[ExperienceId],resinOps,rib);
+	selectSampleWorkSubsets(bolSap[SampleWorkId],resinOps,rib);
+	return rib;
+}
+
+Json::Value Resin::ParseSap(const std::string sapKey, std::string fnString) {
+
+    const char *cfn = fnString.c_str();
+    struct stat statbuffer;
+    if ( stat(cfn,&statbuffer) != 0 ) {
+        char pwd_b[128];
+        char fpath_b[256];
+        getcwd(pwd_b,128);
+        sprintf(fpath_b,"%s/%s",pwd_b,(char *)cfn);
+        if ( stat(fpath_b,&statbuffer) != 0 ) {
+            char estr1[328];
+            sprintf(estr1,"failed to find file path at either %s or %s.",cfn,fpath_b);
+            throw std::invalid_argument(estr1);
+        }
+        fnString = fpath_b;
+    }
+    std::ifstream input_buffer(fnString.c_str());
+    std::string input_text(( std::istreambuf_iterator<char>(input_buffer)),
+                             std::istreambuf_iterator<char>());
+    Json::Value root;
+    Json::Reader reader;
+    if ( reader.parse( input_text, root ) ) {
+        return root[sapKey];
+    }
+    std::cout << reader.getFormattedErrorMessages();
+    std::string estr2 ="Failure in attempt to parse json from " + fnString + ".";
+    throw std::runtime_error(estr2);
+}
+
+void mixInBoleSap(Json::Value cookingSap, FilterOptions fOpO,Json::Value sapNodeO) {
+
+	// Loop through items at this level
+
+	// When they are lists:
+		// loop through list accepting each item for cookingSap according to FilterOptions
+		// and recursively calling mixInBoleSap on non-scalar object items 
+	// When they are objects:
+		// recursively call mixInBoleSap
+	// When they are scalars:
+		// simply assign to cookingSap.
+}
+
+const Json::Value Resin::SecreteGlobule(std::string fnString1, std::string fnString2, FilterOptions fOpO) {
+		const Json::Value bolesap = Resin::ParseSap("BoleSap",fnString1);
+		Json::Value cookingsap = Resin::ParseSap("SoilSap",fnString2);
+		mixInBoleSap(cookingsap,fOpO,boleSap);
+        return cookingsap
+}
+
+Resin::Resin(std::string fnString1,std::string fnString2, Options resinOps) :
+	BoleSap(Resin::ParseSap("BoleSap",fnString1)), SoilSap(Resin::ParseSap("SoilSap",fnString2)), ResinSubsets(Resin::InitSubsets(BoleSap,resinOps)) {
+
+    if ( BoleSap.size() <= 0 )           throw std::runtime_error("No content seen in BoleSap data.");
+    if ( ! BoleSap.isMember("Name") )    throw std::runtime_error("Name not found as member major member key.");
+
+    if ( SoilSap.size() <= 0 )                            	throw std::runtime_error("No content seen in SoilSap data.");
+    if ( ! SoilSap.isMember("BackgroundColorType") )		throw std::runtime_error("BackgroundColorType not found as major member key.");
+    if ( ! SoilSap.isMember(SoilSap["BackgroundColorType"].asString()) )
+															throw std::runtime_error("BackgroundColorType value not found as major member key.");
+    if ( ! SoilSap.isMember("MinimalMonthsToShow") )		throw std::runtime_error("MinimalMonthsToShow not found as major member key.");
+    if ( ! SoilSap.isMember("YearsBackToShow") )			throw std::runtime_error("YearsBackToShow not found as major member key.");
+}
+
+Resin::Resin(const Resin &resinO) : BoleSap(resinO.BoleSap), SoilSap(resinO.SoilSap) {}
+
+bool Resin::ValidateBoleSap(std::vector<std::string> &keySet,bool quietFailure=true) {
+	bool b = Resin::ValidateSap(BoleSap["BoleSap"],keySet,quietFailure);
+	return b;
+}
+
+bool Resin::ValidateSap(const Json::Value& jvoR, std::vector<std::string> &keySet,bool quietFailure) {
+	if ( keySet.size() <= 0 ) return false;
+    for (std::string key : keySet) {
+		if ( ! jvoR.isMember(key) ) {
+			if ( ! quietFailure ) std::cout << "Key:  " << key << " not found." << std::endl;
+			return false;
+		}
+	}
+	return true;
+}
+
+bool Resin::ValidateSoilSap(std::vector<std::string> &keySet,bool quietFailure=true) {
+	bool b = Resin::ValidateSap(SoilSap["SoilSap"], keySet,quietFailure);
+	return b;
+}
+
+//345678901234567890123456789012345678901234567890123456789012345678901234567890
+// End of resin.cpp
+/*
+int rows = 100;
+int cols = 200;
+vector< vector<int> > f(rows, vector<int>(cols));
+f[rows - 1][cols - 1] = 0; // use it like arrays
+ */
+

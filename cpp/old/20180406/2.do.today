@@ -1,0 +1,11 @@
+	1.	Finish compile cleanup with redisign of secrete internal. (Make a go at these after rest this afternoon).
+	2.	Get compiles back working.
+	3.	Get all loaders working, TDD, with finaly check using dumps and running through the GTests creations again, even if they need to be all rewritten.
+	4.	Make new GTests to check secrete methods.
+	5.	Exhaustively go through rest of known resin planned function and make sure it all compiles, is reasonable, and has adequate GTest coverage.
+	6.	Make a go at mixer code again, now using resin infrastructure that is making more sense, including reference constants.
+	7.	TDD mixer code.
+	8.	Begin TDD on resinate using Bats.
+	9.	Try to get first HTML template working by end of weekend.
+
+

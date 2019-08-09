@@ -1,0 +1,19 @@
+{ "SoilSap": {
+		"AllYearBackgroundColor":"lightgray",
+		"DefaultYearsBackToShow":10,
+		"MonthlyBackgroundColors":[
+			"lightgray",
+			"lightgray",
+			"lightgray",
+			"lightgray",
+			"lightgray",
+			"lightgray",
+			"lightgray",
+			"lightgray",
+			"lightgray",
+			"lightgray",
+			"lightgray",
+			"lightgray"
+		]
+    }
+}

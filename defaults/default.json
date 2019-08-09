@@ -1,0 +1,55 @@
+{
+	"BackgroundColorType":"AllYearBackgroundColor",
+	"AllYearBackgroundColor":"gold",
+	"MonthlyBackgroundColors":{
+		"January":		"lightslategray",
+		"February":		"lightgray",
+		"March":		"lightyellow",
+		"April":		"lightgreen",
+		"May":			"lightpink",
+		"June":			"cyan",
+		"July":			"lightsalmon",
+		"August":		"aliceblue",
+		"September":	"cornsilk",
+		"October":		"lightblue",
+		"November":		"beige",
+		"December":		"skyblue"
+	},
+	"Styles": {
+		"CoreDeveloper": {
+				"Title": "Core Developer",
+				"FontStyle": "Times",
+				"NameSize": "10pt",
+				"PhoneSize": "9pt",
+				"SectionSize": "10pt"
+			},
+		"SoftwareTestEngineer": {
+				"Title": "Software Test Engineer",
+				"FontStyle": "Times",
+				"NameSize": "10pt",
+				"PhoneSize": "9pt",
+				"SectionSize": "10pt"
+		},
+		"Automation Engineer": {
+				"Title": "Automation Engineer",
+				"FontStyle": "Times",
+				"NameSize": "10pt",
+				"PhoneSize": "9pt",
+				"SectionSize": "10pt"
+		},
+		"SDET": {
+				"Title": "Software Development Engineer in Test",
+				"FontStyle": "Times",
+				"NameSize": "10pt",
+				"PhoneSize": "9pt",
+				"SectionSize": "10pt"
+		},
+		"SysAdmin": {
+				"Title": "System Administrator",
+				"FontStyle": "Times",
+				"NameSize": "10pt",
+				"PhoneSize": "9pt",
+				"SectionSize": "10pt"
+		}
+	}
+}

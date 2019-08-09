@@ -1,0 +1,26 @@
+
+MustSubMoldGlom::MustSubMoldGlom*	createMustSubMoldGlomObject(std::string targetText) {
+	MustSubMoldGlom::MustSubMoldGlom* b = new MustSubMoldGlom::MustSubMoldGlom(targetText);
+	return b; 
+}
+
+OptionalGlom::OptionalGlom*			createOptionalGlomObject(std::string targetText) {
+	OptionalGlom::OptionalGlom* b = new OptionalGlom::OptionalGlom(targetText);
+	return b; 
+}
+
+RequiredGlom::RequiredGlom*			createRequiredGlomObject(std::string targetText) {
+	RequiredGlom::RequiredGlom* b = new RequiredGlom::RequiredGlom(targetText);
+	return b; 
+}
+
+std::unique_ptr<Object> getObject1() {
+    return std::make_unique<Object>();
+}
+
+	const std::vector<GlomBase* (*)()> FactoryVector =
+		{	createRequiredGlomObject,
+			createOptionalGlomObject,
+			createMustSubMoldGlomObject
+		};
+

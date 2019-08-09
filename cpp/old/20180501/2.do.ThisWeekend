@@ -1,0 +1,10 @@
+	0.		Back things up.
+	1.		Go through molds and cover all with tests.
+	2.		Go through glomsets and cover all with tests.
+	3.		Go through seepfilter and cover all with tests.
+	4.		Go through deeptime and cover basics with tests
+	5.		Go through resin and cover all with tests.
+	6.		Get back to deeptime and finish up automation tests and code additions.
+	7.		Put bats test together for resinate, and get all things working.
+	8.		Finish up md and latex molds, and make sure everything renders nicely.
+	9.		Check into github.

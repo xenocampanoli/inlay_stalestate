@@ -1,0 +1,440 @@
+subject.cpp: In constructor ‘Subject::Subject(std::__cxx11::string&, std::__cxx11::string&, SubjectSeer&)’:
+subject.cpp:89:6: error: ‘class SubjectSeer’ has no member named ‘validateDefaultsTree’
+  ssO.validateDefaultsTree(Tree);
+      ^
+subject.cpp:90:46: error: ‘ParseSap’ was not declared in this scope
+  const Json::Value sdb = ParseSap(subjectFile);
+                                              ^
+subject.cpp:91:6: error: ‘class SubjectSeer’ has no member named ‘filterInSubjectData’
+  ssO.filterInSubjectData(Tree,sdb);
+      ^
+subject.cpp:92:6: error: ‘class SubjectSeer’ has no member named ‘validateCompleteSubjectTree’
+  ssO.validateCompleteSubjectTree(Tree);
+      ^
+subject.cpp: In member function ‘std::__cxx11::string Subject::glomMoldList(std::shared_ptr<Mold>, const Json::Value&)’:
+subject.cpp:99:37: error: no matching function for call to ‘Subject::glomMoldTree(std::shared_ptr<Mold>&, Json::Value::const_iterator&)’
+   entire += glomMoldTree(moldPO,cilo);
+                                     ^
+In file included from subject.cpp:13:0:
+subject.hpp:24:14: note: candidate: std::__cxx11::string Subject::glomMoldTree(std::shared_ptr<Mold>, const Json::Value&)
+  std::string glomMoldTree(std::shared_ptr<Mold> moldPO, const Json::Value& jvoR);
+              ^
+subject.hpp:24:14: note:   no known conversion for argument 2 from ‘Json::Value::const_iterator {aka Json::ValueConstIterator}’ to ‘const Json::Value&’
+subject.cpp: In member function ‘std::__cxx11::string Subject::glomMoldTree(std::shared_ptr<Mold>, const Json::Value&)’:
+subject.cpp:105:20: error: ‘GlomBase’ was not declared in this scope
+  const std::vector<GlomBase* (*)(std::string)> FactoryVector =
+                    ^
+subject.cpp:105:46: error: template argument 1 is invalid
+  const std::vector<GlomBase* (*)(std::string)> FactoryVector =
+                                              ^
+subject.cpp:105:46: error: template argument 2 is invalid
+subject.cpp:107:34: error: ‘MustSubMoldGlom’ does not name a type
+    [](std::string targetText) -> MustSubMoldGlom { return std::make_unique<MustSubMoldGlom>(targetText); },
+                                  ^
+subject.cpp: In lambda function:
+subject.cpp:107:76: error: ‘MustSubMoldGlom’ was not declared in this scope
+    [](std::string targetText) -> MustSubMoldGlom { return std::make_unique<MustSubMoldGlom>(targetText); },
+                                                                            ^
+subject.cpp:107:103: error: no matching function for call to ‘make_unique(std::__cxx11::string&)’
+    [](std::string targetText) -> MustSubMoldGlom { return std::make_unique<MustSubMoldGlom>(targetText); },
+                                                                                                       ^
+In file included from /usr/include/c++/5/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/5/locale:43,
+                 from /usr/include/c++/5/regex:45,
+                 from env.hpp:12,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/unique_ptr.h:764:5: note: candidate: template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)
+     make_unique(_Args&&... __args)
+     ^
+/usr/include/c++/5/bits/unique_ptr.h:764:5: note:   template argument deduction/substitution failed:
+subject.cpp:107:103: error: template argument 1 is invalid
+    [](std::string targetText) -> MustSubMoldGlom { return std::make_unique<MustSubMoldGlom>(targetText); },
+                                                                                                       ^
+In file included from /usr/include/c++/5/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/5/locale:43,
+                 from /usr/include/c++/5/regex:45,
+                 from env.hpp:12,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/unique_ptr.h:770:5: note: candidate: template<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)
+     make_unique(size_t __num)
+     ^
+/usr/include/c++/5/bits/unique_ptr.h:770:5: note:   template argument deduction/substitution failed:
+subject.cpp:107:103: error: template argument 1 is invalid
+    [](std::string targetText) -> MustSubMoldGlom { return std::make_unique<MustSubMoldGlom>(targetText); },
+                                                                                                       ^
+In file included from /usr/include/c++/5/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/5/locale:43,
+                 from /usr/include/c++/5/regex:45,
+                 from env.hpp:12,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/unique_ptr.h:776:5: note: candidate: template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...) <deleted>
+     make_unique(_Args&&...) = delete;
+     ^
+/usr/include/c++/5/bits/unique_ptr.h:776:5: note:   template argument deduction/substitution failed:
+subject.cpp:107:103: error: template argument 1 is invalid
+    [](std::string targetText) -> MustSubMoldGlom { return std::make_unique<MustSubMoldGlom>(targetText); },
+                                                                                                       ^
+subject.cpp: In member function ‘std::__cxx11::string Subject::glomMoldTree(std::shared_ptr<Mold>, const Json::Value&)’:
+subject.cpp:108:34: error: ‘OptionalGlom’ does not name a type
+    [](std::string targetText) -> OptionalGlom  { return std::make_unique<OptionalGlom>(targetText); },
+                                  ^
+subject.cpp: In lambda function:
+subject.cpp:108:74: error: ‘OptionalGlom’ was not declared in this scope
+    [](std::string targetText) -> OptionalGlom  { return std::make_unique<OptionalGlom>(targetText); },
+                                                                          ^
+subject.cpp:108:98: error: no matching function for call to ‘make_unique(std::__cxx11::string&)’
+    [](std::string targetText) -> OptionalGlom  { return std::make_unique<OptionalGlom>(targetText); },
+                                                                                                  ^
+In file included from /usr/include/c++/5/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/5/locale:43,
+                 from /usr/include/c++/5/regex:45,
+                 from env.hpp:12,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/unique_ptr.h:764:5: note: candidate: template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)
+     make_unique(_Args&&... __args)
+     ^
+/usr/include/c++/5/bits/unique_ptr.h:764:5: note:   template argument deduction/substitution failed:
+subject.cpp:108:98: error: template argument 1 is invalid
+    [](std::string targetText) -> OptionalGlom  { return std::make_unique<OptionalGlom>(targetText); },
+                                                                                                  ^
+In file included from /usr/include/c++/5/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/5/locale:43,
+                 from /usr/include/c++/5/regex:45,
+                 from env.hpp:12,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/unique_ptr.h:770:5: note: candidate: template<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)
+     make_unique(size_t __num)
+     ^
+/usr/include/c++/5/bits/unique_ptr.h:770:5: note:   template argument deduction/substitution failed:
+subject.cpp:108:98: error: template argument 1 is invalid
+    [](std::string targetText) -> OptionalGlom  { return std::make_unique<OptionalGlom>(targetText); },
+                                                                                                  ^
+In file included from /usr/include/c++/5/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/5/locale:43,
+                 from /usr/include/c++/5/regex:45,
+                 from env.hpp:12,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/unique_ptr.h:776:5: note: candidate: template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...) <deleted>
+     make_unique(_Args&&...) = delete;
+     ^
+/usr/include/c++/5/bits/unique_ptr.h:776:5: note:   template argument deduction/substitution failed:
+subject.cpp:108:98: error: template argument 1 is invalid
+    [](std::string targetText) -> OptionalGlom  { return std::make_unique<OptionalGlom>(targetText); },
+                                                                                                  ^
+subject.cpp: In member function ‘std::__cxx11::string Subject::glomMoldTree(std::shared_ptr<Mold>, const Json::Value&)’:
+subject.cpp:109:34: error: ‘RequiredGlom’ does not name a type
+    [](std::string targetText) -> RequiredGlom  { return std::make_unique<RequiredGlom>(targetText); }
+                                  ^
+subject.cpp: In lambda function:
+subject.cpp:109:74: error: ‘RequiredGlom’ was not declared in this scope
+    [](std::string targetText) -> RequiredGlom  { return std::make_unique<RequiredGlom>(targetText); }
+                                                                          ^
+subject.cpp:109:98: error: no matching function for call to ‘make_unique(std::__cxx11::string&)’
+    [](std::string targetText) -> RequiredGlom  { return std::make_unique<RequiredGlom>(targetText); }
+                                                                                                  ^
+In file included from /usr/include/c++/5/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/5/locale:43,
+                 from /usr/include/c++/5/regex:45,
+                 from env.hpp:12,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/unique_ptr.h:764:5: note: candidate: template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)
+     make_unique(_Args&&... __args)
+     ^
+/usr/include/c++/5/bits/unique_ptr.h:764:5: note:   template argument deduction/substitution failed:
+subject.cpp:109:98: error: template argument 1 is invalid
+    [](std::string targetText) -> RequiredGlom  { return std::make_unique<RequiredGlom>(targetText); }
+                                                                                                  ^
+In file included from /usr/include/c++/5/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/5/locale:43,
+                 from /usr/include/c++/5/regex:45,
+                 from env.hpp:12,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/unique_ptr.h:770:5: note: candidate: template<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)
+     make_unique(size_t __num)
+     ^
+/usr/include/c++/5/bits/unique_ptr.h:770:5: note:   template argument deduction/substitution failed:
+subject.cpp:109:98: error: template argument 1 is invalid
+    [](std::string targetText) -> RequiredGlom  { return std::make_unique<RequiredGlom>(targetText); }
+                                                                                                  ^
+In file included from /usr/include/c++/5/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/5/locale:43,
+                 from /usr/include/c++/5/regex:45,
+                 from env.hpp:12,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/unique_ptr.h:776:5: note: candidate: template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...) <deleted>
+     make_unique(_Args&&...) = delete;
+     ^
+/usr/include/c++/5/bits/unique_ptr.h:776:5: note:   template argument deduction/substitution failed:
+subject.cpp:109:98: error: template argument 1 is invalid
+    [](std::string targetText) -> RequiredGlom  { return std::make_unique<RequiredGlom>(targetText); }
+                                                                                                  ^
+subject.cpp: In member function ‘std::__cxx11::string Subject::glomMoldTree(std::shared_ptr<Mold>, const Json::Value&)’:
+subject.cpp:110:3: error: scalar object ‘FactoryVector’ requires one element in initializer
+   };
+   ^
+subject.cpp:112:18: error: the value of ‘GlomBase’ is not usable in a constant expression
+  std::unique_ptr<GlomBase> pattpo;
+                  ^
+subject.cpp:105:20: note: ‘GlomBase’ was not declared ‘constexpr’
+  const std::vector<GlomBase* (*)(std::string)> FactoryVector =
+                    ^
+subject.cpp:112:26: error: type/value mismatch at argument 1 in template parameter list for ‘template<class _Tp, class _Dp> class std::unique_ptr’
+  std::unique_ptr<GlomBase> pattpo;
+                          ^
+subject.cpp:112:26: note:   expected a type, got ‘GlomBase’
+subject.cpp:112:26: error: template argument 2 is invalid
+subject.cpp:116:31: error: ‘class std::shared_ptr<Mold>’ has no member named ‘getString’
+  std::string product = moldPO.getString();
+                               ^
+subject.cpp:117:48: error: template argument 1 is invalid
+  for(std::unique_ptr<GlomBase* (*)(std::string)> factorypo : FactoryVector) {
+                                                ^
+subject.cpp:117:48: error: template argument 2 is invalid
+subject.cpp:117:62: error: unable to deduce ‘auto&&’ from ‘FactoryVector’
+  for(std::unique_ptr<GlomBase* (*)(std::string)> factorypo : FactoryVector) {
+                                                              ^
+subject.cpp:118:29: error: ‘factorypo’ cannot be used as a function
+   pattpo = factorypo(product);
+                             ^
+subject.cpp:119:17: error: base operand of ‘->’ is not a pointer
+   while ( pattpo->itemFound() ) {
+                 ^
+subject.cpp:120:21: error: base operand of ‘->’ is not a pointer
+    fieldkey = pattpo->getIdentifier();
+                     ^
+subject.cpp:121:16: error: ‘class std::shared_ptr<Mold>’ has no member named ‘subMoldExists’
+    if ( moldPO.subMoldExists(fieldkey) ) {
+                ^
+subject.cpp:122:23: error: ‘class std::shared_ptr<Mold>’ has no member named ‘newSubMold’
+     submoldo = moldPO.newSubMold(fieldkey);
+                       ^
+subject.cpp:123:15: error: ‘const class Json::Value’ has no member named ‘isList’
+     if ( jvoR.isList(fieldkey) ) {
+               ^
+subject.cpp:126:9: error: expected ‘(’ before ‘jvoR’
+      if jvoR.has_key(fieldkey)
+         ^
+subject.cpp:128:6: error: expected ‘}’ before ‘else’
+      else  replacement = glomMoldTree(submoldo,jvoR);
+      ^
+subject.cpp:128:6: error: expected ‘}’ before ‘else’
+subject.cpp:130:6: error: ‘else’ without a previous ‘if’
+    } else {
+      ^
+subject.cpp:131:15: error: ‘const class Json::Value’ has no member named ‘has_key’
+     if ( jvoR.has_key(fieldkey) ) replacement = jvoR[fieldkey].asString();
+               ^
+subject.cpp:133:65: error: no match for ‘operator+’ (operand types are ‘std::__cxx11::basic_string<char>’ and ‘<unresolved overloaded function type>’)
+        replacement = "Missing submold for sub-list " + fieldkey + std::endl;
+                                                                 ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/stack:60,
+                 from /usr/include/c++/5/regex:48,
+                 from env.hpp:12,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/stl_deque.h:372:5: note: candidate: template<class _Tp, class _Ref, class _Ptr> std::_Deque_iterator<_Tp, _Ref, _Ptr> std::operator+(std::ptrdiff_t, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator+(ptrdiff_t __n, const _Deque_iterator<_Tp, _Ref, _Ptr>& __x)
+     ^
+/usr/include/c++/5/bits/stl_deque.h:372:5: note:   template argument deduction/substitution failed:
+subject.cpp:133:54: note:   cannot convert ‘std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](fieldkey)’ (type ‘std::__cxx11::basic_string<char>’) to type ‘std::ptrdiff_t {aka long int}’
+        replacement = "Missing submold for sub-list " + fieldkey + std::endl;
+                                                      ^
+In file included from /usr/include/c++/5/vector:65:0,
+                 from /usr/include/jsoncpp/json/value.h:13,
+                 from env.hpp:10,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/stl_bvector.h:387:3: note: candidate: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+   ^
+/usr/include/c++/5/bits/stl_bvector.h:387:3: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::ptrdiff_t {aka long int}’
+/usr/include/c++/5/bits/stl_bvector.h:297:3: note: candidate: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^
+/usr/include/c++/5/bits/stl_bvector.h:297:3: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::ptrdiff_t {aka long int}’
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from env.hpp:9,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/basic_string.h:4890:5: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4890:5: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘char’
+/usr/include/c++/5/bits/basic_string.h:4884:5: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4884:5: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘const char*’
+/usr/include/c++/5/bits/basic_string.h:4878:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(_CharT __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4878:5: note:   template argument deduction/substitution failed:
+subject.cpp:133:72: note:   couldn't deduce template parameter ‘_Traits’
+        replacement = "Missing submold for sub-list " + fieldkey + std::endl;
+                                                                        ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from env.hpp:9,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/basic_string.h:4872:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4872:5: note:   template argument deduction/substitution failed:
+subject.cpp:133:72: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_string<char>’
+        replacement = "Missing submold for sub-list " + fieldkey + std::endl;
+                                                                        ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from env.hpp:9,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/basic_string.h:4860:5: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4860:5: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘std::__cxx11::basic_string<char>&&’
+/usr/include/c++/5/bits/basic_string.h:4854:5: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4854:5: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘std::__cxx11::basic_string<char>&&’
+/usr/include/c++/5/bits/basic_string.h:4848:5: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4848:5: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘const std::__cxx11::basic_string<char>&’
+/usr/include/c++/5/bits/basic_string.h:4836:5: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+/usr/include/c++/5/bits/basic_string.h:4836:5: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘char’
+/usr/include/c++/5/bits/basic_string.h:4820:5: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4820:5: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘const char*’
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from env.hpp:9,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/basic_string.tcc:1167:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1167:5: note:   template argument deduction/substitution failed:
+subject.cpp:133:72: note:   couldn't deduce template parameter ‘_Traits’
+        replacement = "Missing submold for sub-list " + fieldkey + std::endl;
+                                                                        ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from env.hpp:9,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/basic_string.tcc:1151:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1151:5: note:   template argument deduction/substitution failed:
+subject.cpp:133:72: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_string<char>’
+        replacement = "Missing submold for sub-list " + fieldkey + std::endl;
+                                                                        ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from env.hpp:9,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/basic_string.h:4783:5: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4783:5: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘const std::__cxx11::basic_string<char>&’
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from env.hpp:9,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/stl_iterator.h:1152:5: note: candidate: template<class _Iterator> std::move_iterator<_Iterator> std::operator+(typename std::move_iterator<_Iterator>::difference_type, const std::move_iterator<_Iterator>&)
+     operator+(typename move_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:1152:5: note:   template argument deduction/substitution failed:
+subject.cpp:133:72: note:   couldn't deduce template parameter ‘_Iterator’
+        replacement = "Missing submold for sub-list " + fieldkey + std::endl;
+                                                                        ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from env.hpp:9,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/stl_iterator.h:334:5: note: candidate: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:334:5: note:   template argument deduction/substitution failed:
+subject.cpp:133:72: note:   couldn't deduce template parameter ‘_Iterator’
+        replacement = "Missing submold for sub-list " + fieldkey + std::endl;
+                                                                        ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from env.hpp:9,
+                 from subject.hpp:7,
+                 from subject.cpp:13:
+/usr/include/c++/5/bits/stl_iterator.h:930:5: note: candidate: template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:930:5: note:   template argument deduction/substitution failed:
+subject.cpp:133:72: note:   couldn't deduce template parameter ‘_Iterator’
+        replacement = "Missing submold for sub-list " + fieldkey + std::endl;
+                                                                        ^
+subject.cpp:134:8: error: continue statement not within a loop
+        continue;
+        ^
+subject.cpp:137:10: error: base operand of ‘->’ is not a pointer
+    pattpo->replaceFoundIdentifier(product, replacement);
+          ^
+subject.cpp:139:30: error: ‘factorypo’ was not declared in this scope
+    pattpo = factorypo(product);
+                              ^
+subject.cpp:140:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+subject.cpp: At global scope:
+subject.cpp:141:2: error: expected declaration before ‘}’ token
+  }
+  ^
+make: *** [subject.o] Error 1

@@ -1,0 +1,1 @@
+g++ -g -c -g -Wall -Wextra -pthread -std=c++17 -isystem ./googletest/googletest/include glomsets.cpp -o glomsets.o

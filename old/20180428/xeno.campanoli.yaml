@@ -1,0 +1,302 @@
+<html>
+	<head>
+		<title>SDET, Software Engineer, Developer, Programmer, QA Tester</title>
+		<link rev="made" href="mailto:xeno.campanoli@gmail.com">
+		<style>
+			/* resume specific themes */
+			strong {
+				font-size:  larger;
+			}
+			body, table {
+					/* a lighter light slate gray */
+					background-color: lightyellow;
+					font-size:  smaller;
+				}
+			div#contactinfo {
+				font-size:  smaller
+			}
+			div#summary {
+			}
+			div#history {
+				font-size:  smaller
+			}
+			div#container {width:100%;}
+			div#left {float:left;width:100px;}
+			div#right {float:right;width:100px;}
+			div#center {margin:0 auto;width:100px;}
+		</style>
+	</head>
+	<body>
+		<div id='identhdr' class='cabeza'>
+			<strong>Xeno Campanoli</strong><br />
+			<div id='contactinfo' class='cabeza'>
+			Cell (voice message service):  (206) 947-7664<br />
+			<a href="mailto:xeno.campanoli@gmail.com">Email: (xeno.campanoli@gmail.com)</a><br />
+			<pre>Skype:  xeno.campanoli</pre>
+			Last updated:  Thursday November 9, 2017<br />
+			</div>
+		</div>
+		<div>
+		<ul>
+		<li>Code, data, needs analysis, profiling/cataloging, design, coding solutions</li>
+		<li>Focus on complex lists needs in large frameworks</li>
+		<li>Able to accumulate a large number of knowledge of concerns and balance these helpfully in a high performance project.</li>
+		<li>Efficient and helpful exchange of knowledge, from training to pair programming.</li>
+		<li>Excellent skills in C, Ruby, Bash</li>
+		<li>Tensorflow</li>
+		<li>Python, C++, Javascript, C#, Powershell, Go, Java, Groovy, Unix Shell environment in general, Perl</li>
+		<li>Test software used includes Criterion, Pester, Bats, Minitest, RSpec, Cucumber, JUnit, Mocha</li>
+		<li>Also experienced with Jenkins, Make, Visual Studio, Maven, Ant, HTML, CGI, Ruby On Rails, Mezzanine/Django</li>
+		<li>Worked recently with Red Hat, Windows 10, Windows Server 2012 Datacenter, Ubuntu, CentOS, SuSE</li>
+		<li>Recent Environment:  Red Hat Cluster Management, QPID, AMQP</li>
+		</ul>
+		</div>
+		<div id='history' class='cabeza'>
+			<h2>Experience:</h2>
+
+		<br />
+		<strong>Developer, Analyst at Microsoft</strong><br /><br />
+		August 2017 to November 2017<br />
+		<p>
+		<ul>
+		<li>OMS development for support of Linux Azure.</li>
+		<li>Refactored administrative shell scripts integral to product, eliminating bugs.</li>
+		<li>Wrote new unit tests, system tests, and install tests, as well as wrapper tools for ease of developer use.</li>
+		<li>Built install bundles and tested for each project.</li>
+		<li>Worked in Microsoft git / github release process.</li>
+		<li>Wrote install tests and scripts to help run these.</li>
+		<li>Figured out bug with new feature by reading documents and research.</li>
+		<li>Helped with customer tickets.</li>
+        </ul>
+
+		<br />
+		<strong>Developer, Analyst at Microsoft</strong><br /><br />
+		April 2017 to July 2017<br />
+		<p>
+		<ul>
+		<li>Aided Scientest in use of tripletloss image learning programs in Python and Tensorflow.</li>
+		<li>Programmed modifications to existing Python Tensorflow programs from two different suites.</li>
+		<li>Provided enhanced adminitstrative tools for crop/alignment, training, and forward pass runs.</li>
+		<li>Improved administrative tools for managing large directory trees of images as datasets.</li>
+        </ul>
+
+		<br />
+		<strong>SDET, Tools Developer, Analyst at Meteorcomm</strong><br /><br />
+		October 2016 to March 2017<br />
+		<p>
+		<ul>
+		<li>Component Behavior Profiling, Behavior Evidence Cataloguing and Analysis</li>
+		<li>Test System Planning and Organization</li>
+		<li>Codebase reading and comprehension in Ruby, C/C++, Bash, Cucumber, Awk</li>
+		<li>Study of partially running and broken legacy software, with resurrection to functionality when needed.</li>
+		<li>Combinations usage and testing of Red Hat clusters, and QPID components</li>
+		<li>Worked efficiently with infrastructure personnel around improvement potentials, buts, and breakdowns.</li>
+		<li>Cucumber test development</li>
+		<li>Programming Ruby and Bash</li>
+		<li>Performance Automation and Testing</li>
+		<li>QPID/AMQP environment tools development, design and maintenance</li>
+		<li>Redhat MRG environment</li>
+		<li>RedHat 6.7</li>
+		<li>AMQP Data profiling with both Ruby and Bash</li>
+		</ul>
+
+		<br />
+		<div id="container">
+		  <div id="left"><nobr><strong>SDET, Tools Developer, Microsoft</strong></nobr></div>
+		  <div id="center"><nobr>One year Contract</nobr></div>
+		  <div id="right"><nobr>July 2015 to June 2016</nobr></div>
+		</div>
+		<p>
+		<ul>
+		<li>Originally hired for experience in Linux, with primary project being on Ubuntu.</li>
+		<li>Refactored embedded Powershell scripts in Jenkins to call independent Powershell script libraries supported by Pester Unit Tests.</li>
+		<li>Configured automation for testing of Azure SKUs under SPEC JBB, SPEC CPU 2006, COREMARK, fio</li>
+		<li>Enhanced C# applications and tools to meet expanding needs of the project.</li>
+		<li>Used Jenkins GUI configurations to improve and adjust function for the needs of the project.</li>
+		<li>Worked across many OS types and versions including:  Windows 10, Windows Server 2012 Datacenter, Ubuntu, CentOS, SuSE</li>
+		<li>Used Codeflow for code reviews.</li>
+		<li>Used Ubuntu, CentOS, SuSE and Cygwin to develop cross platform code for both Linux and Windows that worked and could be maintained with close to the same function,
+		and similar looking code.</li>
+		</ul>
+
+		<br />
+		<div id="container">
+			<div id="left">
+				<strong><nobr>SDE Sqoop</nobr></strong>,
+			</div>
+			<div id="center">
+				Contract
+			</div>
+			<div id="right">
+				2014
+			</div>
+		</div>
+		<p>
+		<ul>
+		<li>Assisted with Linux/Ruby based application built with JRuby using logs of purely functional list comprehension oriented constructs.  Provided add on unit testing examples.</li>
+		<li>Tested and made assessments of progressing Ruby on Rails web site interface.</li>
+		</ul>
+
+		<br />
+		<div id="container">
+			<div id="left">
+				<strong><nobr>SDET, Mozy/EMC</nobr></strong>
+			</div>
+			<div id="center">
+				Contract
+			</div>
+			<div id="right">
+				<nobr>January 2014 to May 2014</nobr>
+			</div>
+		</div>
+		<p>
+		<ul>
+		<li>Tested and developed automation tests for Ubuntu, Debian, CentOS on VMWare virtual machines.</li>
+		<li>Provided prototype ideas for improved constructs in Ruby.</li>
+		<li>Did some manual testing and bug reporting.</li>
+		<li>Helped co-workers with Ruby questions.</li>
+		</ul>
+
+		<br />
+		<div id="container">
+			<div id="left">
+				<nobr><strong>SDE, SDET, Rhapsody Online/Real Networks/Rhapsody International</strong></nobr>
+			</div>
+			<div id="center">
+				<nobr>Salary Position</nobr>
+			</div>
+			<div id="right">
+				<nobr>June 2007 to September 2013<nobr/>
+			</div>
+		</div>
+		<p>
+		<ul>
+		<li>Installed and maintained the department's build and monitoring servers in CentOS and Ubuntu.</li>
+		<li>Used my build software scripts and our CentOS build server to provide builds for other departments and projects.</li>
+		<li>Developed support monitoring tool using Ruby and curl with extensive web reporting.</li>
+		<li>Developed and maintained a wide range of tools using Ruby, Bash, ANT, Java, Javascript</li>
+		<li>Wrote, configured and maintained build software</li>
+		<li>Supported and helped maintain GUI testing automation</li>
+		</ul>
+		</p>
+
+		<div id="container">
+			<div id="left">
+				<nobr><strong>Real Networks - Software Development and Test Engineer in QA and Dev/Build</strong></nobr>
+			</div>
+			<div id="center">
+				Contract
+			</div>
+			<div id="right">
+				<nobr>June 2005 to June 2006</nobr>
+			</div>
+		</div>
+		<p>
+		<ul>
+		<li>Re-built and maintained build server and build scripts for product.</li>
+		<li>Wrote complex cache clear tool for site using ruby and curl.</li>
+		<li>Wrote build tools with web GUI front end and authentication.</li>
+		<li>Wrote source code comparison tool with special abstraction mechanisms as per spec from manager.</li>
+		<li>Built Linux servers for QA department needs.</li>
+		<li>Generally supported any Linux/Shell/Ruby tools needs.</li>
+		<li>Assisted in analysis and testing duties.</li>
+		</ul>
+		</p>
+
+		<div id="container">
+			<div id="left">
+				<nobr><strong>Aventail - SDET</strong></nobr>
+			</div>
+			<div id="center">
+				Salary
+			</div>
+			<div id="right">
+				<nobr>January 2001 to October 2001</nobr>
+			</div>
+		</div>
+		<p>
+		<ul>
+		<li>Built Perl Based Test software for SSL security configurations tests.</li>
+		<li>Developed software completely on my own Debian Laptop.</li>
+		</ul>
+		</p>
+
+		<div id="container">
+			<div id="left">
+				<nobr><strong>ShopNow.com / Network Commerce</strong></nobr>
+			</div>
+			<div id="center">
+				Salary
+			</div>
+			<div id="right">
+				<nobr>June 2000 to September 2000</nobr>
+			</div>
+		</div>
+		<p>
+		<ul>
+		<li>Lead Perl programmer on a RedHat Linux based website product.</li>
+		</ul>
+		</p>
+
+		<div id="container">
+			<div id="left">
+				<nobr><strong>Intel - SDE</strong></nobr>
+			</div>
+			<div id="center">
+				Contract
+			</div>
+			<div id="right">
+				<nobr>January 2000 to May 2000</nobr>
+			</div>
+		</div>
+		<p>
+		<ul>
+		<li>Helped team build and analyze web based application for new thin server product.</li>
+		<li>Development was on Linux with Apache, as this was the most convenient starting platform.</li>
+		</ul>
+		</p>
+
+		<div id="container">
+			<div id="left">
+				<nobr><strong>Quanta Investments - SDE</strong></nobr>
+			</div>
+			<div id="center">
+				Salary
+			</div>
+			<div id="right">
+				<nobr>September 1998 to December 1999</nobr>
+			</div>
+		</div>
+		<p>
+		<ul>
+		<li>Built, almost completely on my own, from bottom up, a Linux based customer fulfillment software.</li>
+		<li>Initial research involved testing software aspects of Debian, RedHat, Mandrake, SuSE versions of Linux.</li>
+		<li>Eventually settled on Mandrake.</li>
+		<li>Did extensive domain research, including staff interviews, to establish design needs.</li>
+		<li>Tested entire system on my own, and got it working without serious failures.</li>
+		<li>Included a ReadWrite and a Readonly copy of MySQL databases, Object Based Perl scripting to do GUIs and administration.</li>
+		<li>Made its own automated backups, with notifications.</li>
+		<li>Was installable in entirety with RO backup on bosses laptop, so that he could have maintained copies of his own.</li>
+		<li>I deployed first version, and it had high availability and reliability, and immediately increased quality of data through helpful validations.</li>
+		</ul>
+		</p>
+
+		</div>
+
+		<h5>Early Linux Experience</h5>
+		<p>First experiences with Linux began in 1993, and after 1994 I always have had a Linux system in my home.  Through most of the 90s I was used to compiling my own kernels (I was already
+		a Unix C programmer at that time).  Linux flavors I've worked on over the years include:  Ubuntu, Debian, RedHat, CentOS, openSuSE, Fedora, Slackware, Mandrake, Gentoo.  I have also used BSD, Sys5, Solaris, Ultrix, Vax/VMS, AIX, qnx, TOPS-10, Perkin-Elmer OS/32.</p>
+
+		<h5>Code Examples</h5>
+		<ul>
+		<li><a href='https://github.com/xenocampanoli/shwrap'>Shwrap</a></li>
+		<li><a href='https://github.com/xenocampanoli/docsrc'>DocSrc</a></li>
+		<li><a href='https://github.com/xenocampanoli/something'>Algorithms exercises (not finished)</a></li>
+		</ul>
+
+		<h2>Education:</h2>
+		<a href='http://www.eskimo.com/~xeno/MyUWDiploma.html'>B.A., Economics, University of Washington.  Cum Laude,
+		Phi Beta Kappa.  Focus on mathematics and statistics.</a><br />
+	</div>
+</body>
+</html>

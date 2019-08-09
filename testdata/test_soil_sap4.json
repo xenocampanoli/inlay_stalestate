@@ -1,0 +1,22 @@
+{ "SoilSap": {
+		"BackgroundColorType":"AllYearBackgroundColor",
+		"AllYearBackgroundColor":"lightgray",
+		"MonthlyBackgroundColors":{
+			"January":		"lightslategray",
+			"February":		"lightgray",
+			"March":		"lightyellow",
+			"April":		"lightgreen",
+			"May":			"lightpink",
+			"June":			"cyan",
+			"July":			"lightsalmon",
+			"August":		"aliceblue",
+			"September":	"cornsilk",
+			"October":		"lightblue",
+			"November":		"beige",
+			"December":		"skyblue"
+		},
+		"MinimalMonthsToShow":"2",
+		"YearsBackToShow":"10",
+		"YearsFromStartToIgnore":"-1"
+    }
+}

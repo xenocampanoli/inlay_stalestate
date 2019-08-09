@@ -1,0 +1,2 @@
+	1.	Go through deeptime.* and clean up enough to compile.
+	2.	Try some basic gtest on resinoptions.

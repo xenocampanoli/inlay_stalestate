@@ -1,0 +1,22 @@
+1.	Finish radical mods:
+	i.		Code Init internal procedures. (2 hours)
+	ii.		Make sure usage makes sense in initializer lists. ( 1 more hour)
+	iii.	Expand the xc1.json to have a full set of data. ( 1 more hour)
+	vi.		Make a go a draft of mixer code again. ( 2 more hours)
+	v.		Review states one more time. (1 more hour)
+	vi.		Go through resin GTests and make sure they make sense. ( 4 hours )
+	vii.	Take tar backups.
+
+2.  Cleanup tasks
+	i.		Get resin.?pp to compile again, and make all the existing tests work.
+	ii.		Add in the two initializer methods code and get TDD them to work.
+	iii.	Make resin tests work with xc1 and perhaps two added variations files.
+	iv.		Go over dependencies in Makefile and make them right.
+	v.		Put together mixIngredients method details and make it compile.
+	vi.		TDD the Mixer class to make all the pieces work with coverage, adding in the work done Wednesday on pattern matching and replacing.
+	vii.	Start putting together resinate with bats tests.
+	viii.	Make sure there are at least two working mold folders in the molds tree.
+	ix.		TDD all the qualifier cases for resinate.
+	x.		Add a LateX mold and make it work.
+	xi.		Check in to github.
+

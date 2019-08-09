@@ -1,0 +1,15 @@
+1.	Symbols inside mold files:
+	i.		@@@itemname@@@ is a single massage parameter which should be replaced by a resin value, or list of resin values, directly.
+	Example:  @@@Name@@@
+	ii.		^^^moldname^^^ is a reference to another mold file to be recursively processed and whose text result is to then be placed
+	in this location.  Example:  ^^^Experience^^^.
+	
+
+2.	Order of operations:
+	a.		Resin file pairs are specified for user specific data.
+	b.		A Template file set is specified, designating the forms of resume to be generated.
+	c.		Starting with each top template file, recursively process each template into output strings which can be returned and aggregated into final output.
+	d.		Write results to output tree under descriptive names that the user can use to critically study and easily categorize for submissal needs.
+	e.		Write addendum variations like pdf and docx versions from HTML and Outlook.
+
+3.	

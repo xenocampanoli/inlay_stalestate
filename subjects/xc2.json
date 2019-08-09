@@ -1,0 +1,692 @@
+{ "BoleSap": {
+        "Name":"Xeno Campanoli",
+        "Phone":"206-947-7664",
+        "Email":"xeno.campanoli@gmail.com",
+        "Summary":"Now is the time for all good Summaries to on and on and on until you cannot stand it any more, and furthermore for them to go\nmultiple lines, not just one, but\nmany\nmany\nmany lines that go beyond the comfort of a reasonable screen size and just irk the living\ndaylights of the sanest among\nus.",
+		"Experience": [
+			{	"Title":"Senior Consultant",
+				"Client Organization":"Kestra Medical",
+				"Payroll Organization":"Chameleon",
+				"Begin Month":"February 2018",
+				"End Month":"March 2018", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"Assistance with company automated build and test system.",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"Erick Roane",
+				"Supervisor Email":"erick.roane@kestramedical.com",
+				"Address":"",
+				"City":"Kirkland, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Senior Consultant",
+				"Client Organization":"Microsoft",
+				"Payroll Organization":"Collabera",
+				"Begin Month":"August 2017",
+				"End Month":"November 2017", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"Laura Galbraith",
+				"Supervisor Email":"lauragalbraith@microsoft.com",
+				"Address":"",
+				"City":"Redmond, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Senior Consultant",
+				"Client Organization":"Microsoft",
+				"Payroll Organization":"Collabera",
+				"Begin Month":"April 2017",
+				"End Month":"July 2017", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"Bernd Heisele",
+				"Supervisor Email":"bh12@bheisele.com",
+				"Address":"",
+				"City":"Bellevue, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Senior Consultant",
+				"Client Organization":"Meteorcomm",
+				"Payroll Organization":"Summit Group Solutions",
+				"Begin Month":"September 2016",
+				"End Month":"March 2017", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"gsnead@meteorcomm.com",
+				"Supervisor Email":"gsnead@meteorcomm.com",
+				"Address":"",
+				"City":"Bellevue, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Senior Consultant",
+				"Client Organization":"Microsoft",
+				"Payroll Organization":"Akvelon",
+				"Begin Month":"July 2015",
+				"End Month":"March 2016", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"David Berg",
+				"Supervisor Email":"david.berg@microsoft.com",
+				"Address":"",
+				"City":"Redmond, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Senior Consultant",
+				"Client Organization":"EMC",
+				"Payroll Organization":"",
+				"Begin Month":"January 2014",
+				"End Month":"May 2014", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"",
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Redmond, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Senior Consultant",
+				"Client Organization":"Expedia",
+				"Payroll Organization":"Expedia",
+				"Begin Month":"November 2014",
+				"End Month":"January 2015", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"",
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Redmond, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Senior Consultant",
+				"Client Organization":"Sqoop",
+				"Payroll Organization":"Self",
+				"Begin Month":"September 2014",
+				"End Month":"October 2015", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"",
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Redmond, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Programmer",
+				"Client Organization":"Northern Pacific Digital",
+				"Payroll Organization":"Northern Pacific Digital",
+				"Begin Month":"March 2015",
+				"End Month":"June 2015", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"",
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Redmond, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Programmer",
+				"Client Organization":"Northern Pacific Digital",
+				"Payroll Organization":"Northern Pacific Digital",
+				"Begin Month":"June 2014",
+				"End Month":"July 2014", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"",
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Redmond, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"Real Networks/Rhapsody/Rhapsody International/Napster",
+				"Payroll Organization":"Volt first year, then Real Networks then Rhapsody International",
+				"Begin Month":"September 2007",
+				"End Month":"September 2013", 
+				"Summary":"Software Engineer supporting QA with back end tools, automation, programmed tests, and manual testing across many different projects for an aggregate of six consecutive years.",
+				"Anecdotes": [
+							{  "account":"Built an HTTP monitor to keep track of some 128 production URIs for around 20 resources vital to the web site.  The application provided email notification to a company established list of resource owners to keep them informed of any outages.  Online reporting was available to all with a simple website showing errors for the failing resource in question.  The applciation worked so well, we later expanded its use to monitor the resources provided to us by our streaming data CDN, and the CEO was able to use the monitor data to re-negotiate the contract with said CDN vendor.",
+								"skillsUsed":["Ruby","Curl","Apache","Ubuntu","RAM Disk","CGI","Statistics"]
+							},
+							{}
+							],
+				"Supervisor Email":"leiwang@rhapsody.com",
+				"Address":"701 5th Avenue, Suite 3100",
+				"City":"Seattle, WA",
+				"Mail Code":"98104",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"CoCo",
+				"Payroll Organization":"CoCo",
+				"Begin Month":"November 2006",
+				"End Month":"May 2007", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"Reilly Eller",
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Redmond, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Software Development Engineer",
+				"Client Organization":"OnAir",
+				"Payroll Organization":"OnAir",
+				"Begin Month":"June 2006",
+				"End Month":"September 2006", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "Brief":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Name":"",
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Redmond, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"Real Networks",
+				"Payroll Organization":"Volt",
+				"Begin Month":"September 2007",
+				"End Month":"September 2013", 
+				"Summary":"Software Engineer supporting QA with back end tools, automation, programmed tests, and manual testing across many different projects for an aggregate of six consecutive years.",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":["Ruby","Curl","Apache","Ubuntu","CentOS","CGI","Java","Javascript","Statistics"]
+							},
+							{}
+							],
+				"Supervisor Email":"leiwang@rhapsody.com",
+				"Address":"701 5th Avenue, Suite 3100",
+				"City":"Seattle, WA",
+				"Mail Code":"98104",
+				"Phone":""
+			},
+			{	"Title":"",
+				"Client Organization":"Western Cartage",
+				"Payroll Organization":"Western Cartage",
+				"Begin Month":"May 2004",
+				"End Month":"May 2005", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Seattle, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"",
+				"Client Organization":"Lile / North American",
+				"Payroll Organization":"Lile / North American",
+				"Begin Month":"November 2003",
+				"End Month":"December 2003", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Seattle, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"",
+				"Client Organization":"Covenant Transport",
+				"Payroll Organization":"Covenant Transport",
+				"Begin Month":"January 2003",
+				"End Month":"September 2003", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Tiftonia, TN",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"SW Developer and Analyst",
+				"Client Organization":"Marconi",
+				"Payroll Organization":"Marconi",
+				"Begin Month":"May 2002",
+				"End Month":"September 2002", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Bellevue, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"Aventail",
+				"Payroll Organization":"Aventail",
+				"Begin Month":"January 2001",
+				"End Month":"October 2001", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Seattle, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Lead Web Developer / Maintainer",
+				"Client Organization":"Network Commerce",
+				"Payroll Organization":"Network Commerce",
+				"Begin Month":"June 2000",
+				"End Month":"October 2000", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Seattle, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Linux Developer",
+				"Client Organization":"Intel Corporation",
+				"Payroll Organization":"",
+				"Begin Month":"January 2000",
+				"End Month":"April 2000", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Seattle, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"Quanta Investments",
+				"Payroll Organization":"Quanta Investments",
+				"Begin Month":"September 1998",
+				"End Month":"December 1999", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Seattle, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Consultant",
+				"Client Organization":"Best Consulting",
+				"Payroll Organization":"Best Consulting",
+				"Begin Month":"November 1997",
+				"End Month":"August 1998", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Bellevue, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"C Programmer",
+				"Client Organization":"Sagem / MORPHO",
+				"Payroll Organization":"Sagem / MORPHO",
+				"Begin Month":"May 1992",
+				"End Month":"March 1997", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Tacoma, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Programmer / Analyst / Consultant",
+				"Client Organization":"University of Washington, Health Sciences, Locke Computer Center",
+				"Payroll Organization":"University of Washington",
+				"Begin Month":"January 1985",
+				"End Month":"February 1992", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Seattle, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"COBOL Programmer / Consultant",
+				"Client Organization":"BRODIE / Dohrmann",
+				"Payroll Organization":"BRODIE / Dohrmann",
+				"Begin Month":"August 1984",
+				"End Month":"December 1984", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Seattle, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"Programmer / Consultant",
+				"Client Organization":"Hazelhurst & Associates, Inc.",
+				"Payroll Organization":"Hazelhurst & Associates, Inc.",
+				"Begin Month":"April 1983",
+				"End Month":"June 1984", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Bellevue, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"Enchanted Village",
+				"Payroll Organization":"Enchanted Village",
+				"Begin Month":"August 1982",
+				"End Month":"September 1982", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Federal Way, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"Bud McGuiver, owner of Dahnkens in Tacoma",
+				"Payroll Organization":"Bud McGuiver, owner of Dahnkens in Tacoma",
+				"Begin Month":"September 2007",
+				"End Month":"September 2013", 
+				"Summary":"Software Engineer supporting QA with back end tools, automation, programmed tests, and manual testing across many different projects for an aggregate of six consecutive years.",
+				"Anecdotes": [
+							{  "account":"Built an HTTP monitor to keep track of some 128 production URIs for around 20 resources vital to the web site.  The application provided email notification to a company established list of resource owners to keep them informed of any outages.  Online reporting was available to all with a simple website showing errors for the failing resource in question.  The applciation worked so well, we later expanded its use to monitor the resources provided to us by our streaming data CDN, and the CEO was able to use the monitor data to re-negotiate the contract with said CDN vendor.",
+								"skillsUsed":["Ruby","Curl","Apache","Ubuntu","RAM Disk","CGI","Statistics"]
+							},
+							{}
+							],
+				"Supervisor Email":"leiwang@rhapsody.com",
+				"Address":"701 5th Avenue, Suite 3100",
+				"City":"Seattle, WA",
+				"Mail Code":"98104",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"Jim Burke of Tacoma",
+				"Payroll Organization":"Jim Burke of Tacoma",
+				"Begin Month":"September 2007",
+				"End Month":"September 2013", 
+				"Summary":"Software Engineer supporting QA with back end tools, automation, programmed tests, and manual testing across many different projects for an aggregate of six consecutive years.",
+				"Anecdotes": [
+							{  "account":"Built an HTTP monitor to keep track of some 128 production URIs for around 20 resources vital to the web site.  The application provided email notification to a company established list of resource owners to keep them informed of any outages.  Online reporting was available to all with a simple website showing errors for the failing resource in question.  The applciation worked so well, we later expanded its use to monitor the resources provided to us by our streaming data CDN, and the CEO was able to use the monitor data to re-negotiate the contract with said CDN vendor.",
+								"skillsUsed":["Ruby","Curl","Apache","Ubuntu","RAM Disk","CGI","Statistics"]
+							},
+							{}
+							],
+				"Supervisor Email":"leiwang@rhapsody.com",
+				"Address":"701 5th Avenue, Suite 3100",
+				"City":"Seattle, WA",
+				"Mail Code":"98104",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"Sears Roebuck of Walla Walla, WA",
+				"Payroll Organization":"Sears Roebuck of Walla Walla, WA",
+				"Begin Month":"September 2007",
+				"End Month":"September 2013", 
+				"Summary":"Software Engineer supporting QA with back end tools, automation, programmed tests, and manual testing across many different projects for an aggregate of six consecutive years.",
+				"Anecdotes": [
+							{  "account":"Built an HTTP monitor to keep track of some 128 production URIs for around 20 resources vital to the web site.  The application provided email notification to a company established list of resource owners to keep them informed of any outages.  Online reporting was available to all with a simple website showing errors for the failing resource in question.  The applciation worked so well, we later expanded its use to monitor the resources provided to us by our streaming data CDN, and the CEO was able to use the monitor data to re-negotiate the contract with said CDN vendor.",
+								"skillsUsed":["Ruby","Curl","Apache","Ubuntu","RAM Disk","CGI","Statistics"]
+							},
+							{}
+							],
+				"Supervisor Email":"leiwang@rhapsody.com",
+				"Address":"701 5th Avenue, Suite 3100",
+				"City":"Seattle, WA",
+				"Mail Code":"98104",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"Sears Roebuck of Walla Walla, WA",
+				"Payroll Organization":"Sears Roebuck of Walla Walla, WA",
+				"Begin Month":"September 2007",
+				"End Month":"September 2013", 
+				"Summary":"Software Engineer supporting QA with back end tools, automation, programmed tests, and manual testing across many different projects for an aggregate of six consecutive years.",
+				"Anecdotes": [
+							{  "account":"Built an HTTP monitor to keep track of some 128 production URIs for around 20 resources vital to the web site.  The application provided email notification to a company established list of resource owners to keep them informed of any outages.  Online reporting was available to all with a simple website showing errors for the failing resource in question.  The applciation worked so well, we later expanded its use to monitor the resources provided to us by our streaming data CDN, and the CEO was able to use the monitor data to re-negotiate the contract with said CDN vendor.",
+								"skillsUsed":["Ruby","Curl","Apache","Ubuntu","RAM Disk","CGI","Statistics"]
+							},
+							{}
+							],
+				"Supervisor Email":"leiwang@rhapsody.com",
+				"Address":"701 5th Avenue, Suite 3100",
+				"City":"Seattle, WA",
+				"Mail Code":"98104",
+				"Phone":""
+			},
+			{	"Title":"SDET",
+				"Client Organization":"Yakima Vally Orchards",
+				"Payroll Organization":"Yakima Vally Orchards",
+				"Begin Month":"September 2007",
+				"End Month":"September 2013", 
+				"Summary":"Software Engineer supporting QA with back end tools, automation, programmed tests, and manual testing across many different projects for an aggregate of six consecutive years.",
+				"Anecdotes": [
+							{  "account":"Built an HTTP monitor to keep track of some 128 production URIs for around 20 resources vital to the web site.  The application provided email notification to a company established list of resource owners to keep them informed of any outages.  Online reporting was available to all with a simple website showing errors for the failing resource in question.  The applciation worked so well, we later expanded its use to monitor the resources provided to us by our streaming data CDN, and the CEO was able to use the monitor data to re-negotiate the contract with said CDN vendor.",
+								"skillsUsed":["Ruby","Curl","Apache","Ubuntu","RAM Disk","CGI","Statistics"]
+							},
+							{}
+							],
+				"Supervisor Email":"leiwang@rhapsody.com",
+				"Address":"701 5th Avenue, Suite 3100",
+				"City":"Seattle, WA",
+				"Mail Code":"98104",
+				"Phone":""
+			},
+			{	"Title":"",
+				"Client Organization":"Allan Brothers",
+				"Payroll Organization":"Allan Brothers",
+				"Begin Month":"September 2007",
+				"End Month":"September 2013", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Naches, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"",
+				"Client Organization":"Mullendore Theaters",
+				"Payroll Organization":"Mullendore Theaters",
+				"Begin Month":"September 2007",
+				"End Month":"September 2013", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Naches, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"",
+				"Client Organization":"Downtown Tacoma Association",
+				"Payroll Organization":"Downtown Tacoma Association",
+				"Begin Month":"September 2007",
+				"End Month":"September 2013", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Tacoma, WA",
+				"Mail Code":"",
+				"Phone":""
+			},
+			{	"Title":"",
+				"Client Organization":"Burgess Furniture and Appliance",
+				"Payroll Organization":"Burgess Furniture and Appliance",
+				"Begin Month":"January 1970",
+				"End Month":"January 1971", 
+				"Summary":"",
+				"Anecdotes": [
+							{  "account":"",
+								"skillsUsed":[]
+							},
+							{}
+							],
+				"Supervisor Email":"",
+				"Address":"",
+				"City":"Tacoma, WA",
+				"Mail Code":"",
+				"Phone":""
+			}
+		],
+		"Education": [
+		],
+		"SampleWork": [
+		],
+		"BackgroundColorType":"MonthlyBackgroundColors"
+    }
+}

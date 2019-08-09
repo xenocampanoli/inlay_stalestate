@@ -1,0 +1,12 @@
+jvalidatorsGTests.o: In function `Construction_CorrectOverSimpleCase_Test::TestBody()':
+/home/xeno/garage/resinate/cpp/jvalidatorsGTests.cpp:31: undefined reference to `JsonValidators::JsonValidators(Json::Value const&)'
+jvalidatorsGTests.o: In function `Validations_ArrayField_Test::TestBody()':
+/home/xeno/garage/resinate/cpp/jvalidatorsGTests.cpp:41: undefined reference to `JsonValidators::JsonValidators(Json::Value const&)'
+jvalidatorsGTests.o: In function `Validations_DictionaryField_Test::TestBody()':
+/home/xeno/garage/resinate/cpp/jvalidatorsGTests.cpp:56: undefined reference to `JsonValidators::JsonValidators(Json::Value const&)'
+jvalidatorsGTests.o: In function `Validations_StringData_Test::TestBody()':
+/home/xeno/garage/resinate/cpp/jvalidatorsGTests.cpp:76: undefined reference to `JsonValidators::JsonValidators(Json::Value const&)'
+jvalidatorsGTests.o: In function `Validations_StringField_Test::TestBody()':
+/home/xeno/garage/resinate/cpp/jvalidatorsGTests.cpp:115: undefined reference to `JsonValidators::JsonValidators(Json::Value const&)'
+collect2: error: ld returned 1 exit status
+make: *** [jvalidatorsGTests] Error 1
